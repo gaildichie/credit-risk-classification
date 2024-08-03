@@ -1,7 +1,7 @@
 
 
 ## Overview of Analysis
-This is an analysis of dataset of historical lending activity from a peer-to-peer lending services company. built a model that can identify the creditworthiness of borrowers.
+This is an analysis of dataset of historical lending activity from a peer-to-peer lending services company. I built a model that can identify the creditworthiness of borrowers.
 
 The data was based on loan size, interest rate, borrower income, debt to income ratio, number of accounts, derogatory marks, total debt and loan status 
 and the prediction was based on the loan status.
