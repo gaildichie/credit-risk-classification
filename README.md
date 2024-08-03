@@ -7,8 +7,8 @@ The data was based on loan size, interest rate, borrower income, debt to income 
 and the prediction was based on the loan status.
 The variable is an int64.
 The analysis started with importing dependencies, importing the lending data, and separating the 'loan status' (y) column from the features(X).
-Data was split into test, train models using the train-test-split, with a random state of 1.
-Next, data was instantiated with the Logistic Regression model with a sg solver and random state of 1.
+Data was split into test and train models using the train-test-split, with a random state of 1.
+Next, data was instantiated with the Logistic Regression model with a sag solver and random state of 1.
 Next, data was fitted with the train variables and predicted with the test variables.
 Lastly, the Confusion Matrix showed the number of correct and incorrect predictions for each class and the
 Classification Report provided precision, recall, F1 score, and support for each class, helping to understand the model's performance.
@@ -38,7 +38,7 @@ Classification Report provided precision, recall, F1 score, and support for each
        *The model is almost perfect at identifying healthy loans, both in terms of not missing any (high recall) and not making any false predictions (perfect precision).
        *Implication: The risk of misclassifying a high-risk loan as healthy is virtually eliminated, making the model very trustworthy for identifying good loans.
 
-    * High-Risk Loan (Precision = 0.85, Recall = 0.91):
+    * High-Risk Loan:
        *The model does well in identifying high-risk loans but not perfectly. Some healthy loans are misclassified as high-risk (precision less than 1), and some high-risk loans are missed (recall less than 1).
        *Implication: While the model captures most high-risk loans, it also falsely flags some healthy loans. This could lead to a conservative approach in lending, where some borrowers might face higher scrutiny 
         or interest rates unnecessarily.
